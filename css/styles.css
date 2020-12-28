@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5; /*harflar orasidagi masofa*/     
+}
+.dark-mode {
+    
+}
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;    
+}
+a {
+    text-decoration: none; /*tag chiziq*/
+}
+.conatiner {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.theme-controls{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+}
+.theme-controls button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.theme-controls button + button {
+    margin-left: 10px;
+    
+}
+.dark-mode, .theme-controls button {
+    border: 1px solid #fff;
+    background-color: #222;
+    color: #fff;
+}
+.site-header {
+    text-align: center;
+    padding: 30px;
+}
+.logo {
+    max-width: 200px;
+    height: 200px;
+    border: 5px solid gold;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+.site-header-title {
+    margin-bottom: 5px;
+    padding: 30px;
+}
+.promo-video {
+    text-align: center;
+}
+.courses-contacts {
+    display: flex;
+}
+.courses, .contacts {
+    width: 50%;
+}
+.courses li,
+.contacts li {
+    margin-bottom: 5px;
+}
+.contacts-list a {
+    display: inline-block;
+    border-bottom: 2px solid gold;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease; /*effek vaqti*/
+}
+.contacts-list a:hover {
+    background-color: gold;  
+}
+.contacts-list a:active {
+    background-color: orange;  
+}
+.dark-mode .contacts-list a {
+    color: gold;
+}
+.contacts-list a:hover {
+    color: #222; 
+}
+.map iframe {
+    width: 100%;
+    border: 1px solid black;
+}
+.map {
+    text-align: center;
+}
+.foot {
+    text-align: center;
+    color: red;
+}
